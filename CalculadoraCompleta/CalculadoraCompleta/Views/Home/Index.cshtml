@@ -9,6 +9,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Calculadora</title>
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
     <div> 
@@ -18,74 +19,75 @@
         <!-- esta linha de comentario é visivel no 'cliente'-->
         @* mas esta nao o é...*@
         <form method="post">
-            <table border="1">
+            <table style="border-spacing:5px; border-collapse:collapse; border: 1px solid #808080">
                 <tr>
                     <td colspan="5">
                         <input type="text" name="display" readonly="readonly" 
-                                style="height:35px;width:275px;text-align:right;    "
-                                value="@ViewBag.Display"/>
+                                style="height:30px;width:215px;text-align:right;" class="form-control"
+                                value="@ViewBag.Display"
+                               />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="7" name="bt" style="height:50px;width:50px;" />
+                        <input type="submit" value="7" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                     <td>
-                        <input type="submit" value="8" name="bt" style="height:50px;width:50px;"/>
+                        <input type="submit" value="8" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                     <td>
-                        <input type="submit" value="9" name="bt" style="height:50px;width:50px;"/>
+                        <input type="submit" value="9" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                     <td>
-                        <input type="submit" value=":" name="bt" style="height:50px;width:50px;"/>
+                        <input type="submit" value=":" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                     <td>
-                        <input type="submit" value="+/-" name="bt" style="height:50px;width:50px;"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" value="4" name="bt" style="height:50px;width:50px;"/>
-                    </td>
-                    <td>
-                        <input type="submit" value="5" name="bt" style="height:50px;width:50px;"/>
-                    </td>
-                    <td>
-                        <input type="submit" value="6" name="bt" style="height:50px;width:50px;"/>
-                    </td>
-                    <td>
-                        <input type="submit" value="X" name="bt" style="height:50px;width:50px;"/>
-                    </td>
-                    <td>
-                        <input type="submit" value="C" name="bt" style="height:50px;width:50px;"/>
+                        <input type="submit" value="+/-" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="1" name="bt" style="height:50px;width:50px;"/>
+                        <input type="submit" value="4" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                     <td>
-                        <input type="submit" value="2" name="bt" style="height:50px;width:50px;"/>
+                        <input type="submit" value="5" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                     <td>
-                        <input type="submit" value="3" name="bt" style="height:50px;width:50px;"/>
+                        <input type="submit" value="6" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                     <td>
-                        <input type="submit" value="-" name="bt" style="height:50px;width:50px;"/>
+                        <input type="submit" value="X" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
+                    </td>
+                    <td>
+                        <input type="submit" value="C" name="bt" style="height:40px;width:40px;" class="btn btn-warning"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="1" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
+                    </td>
+                    <td>
+                        <input type="submit" value="2" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
+                    </td>
+                    <td>
+                        <input type="submit" value="3" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
+                    </td>
+                    <td>
+                        <input type="submit" value="-" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                     <td rowspan="2">
-                        <input type="submit" value="=" name="bt" style="height:110px;width:50px;"/>
+                        <input type="submit" value="=" name="bt" style="height:90px;width:40px;" class="btn btn-outline-success"/>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type="submit" value="0" name="bt" style="height:50px;width:110px;"/>
+                        <input type="submit" value="0" name="bt" style="height:40px;width:90px;" class="btn btn-outline-danger"/>
                     </td>
                     <td>
-                        <input type="submit" value="," name="bt" style="height:50px;width:50px;"/>
+                        <input type="submit" value="," name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                     <td>
-                        <input type="submit" value="+" name="bt" style="height:50px;width:50px;"/>
+                        <input type="submit" value="+" name="bt" style="height:40px;width:40px;" class="btn btn-outline-danger"/>
                     </td>
                 </tr>
 
